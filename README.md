@@ -1,0 +1,1 @@
+Agenda telefonica produzida em JS, aprendizado pessoal, utilizado vanilla, sem frames.

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../modules/style.css">
+    <link rel="icon" href="../assets/phone-book.png">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+    <title>Agenda Telefônica</title>
+
+</head>
+<body>
+    <div  class="main_div">
+        <h1 class="mh">Agenda Telefônica</h1>      
+            <form class="form">
+                <label  class="formtitle">Nome:</label><br>
+                <input id = "id_name" class="text" type ="text" onfocus="this.value=''" placeholder="Nome" required>
+                <br><label class="formtitle">Sobrenome:</label><br>
+                <input id ="id_lastname" class="text" type="Sobrenome" onfocus="this.value=''"placeholder="Sobrenome">
+                <br><label class="formtitle">Celular:</label><br>
+                <input id ="id_mobile" class="text" type="text" onfocus="this.value=''"placeholder="(00) 0 0000-0000" required>
+                <br><label class="formtitle">E-mail:</label><br>
+                <input id ="id_email" class="text" type="email" onfocus="this.value=''"placeholder="email@siasp.com">
+            </form>
+        <div class="container">
+            <form class="searchBar" action="#" method="post">
+                <label id="titlesearchBar" >Pesquisar contato:</label><br>
+                <input type="text" name="search" id="search" placeholder="Buscar" required>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="add" onclick="add()"><h4 class="addbtn">Adicionar</h4></div>
+            <br>
+        <div class="div2" id="3">
+        </div>
+    </div>     
+    
+    <script src="./script.js"></script>
+</body>
+</html>       

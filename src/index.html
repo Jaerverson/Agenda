@@ -1,41 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../modules/style.css">
-    <link rel="icon" href="../assets/phone-book.png">
-    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../modules/style.css" />
+    <link rel="icon" href="../assets/phone-book.png" />
+    <script
+      src="https://kit.fontawesome.com/1e592b5726.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Agenda Telefônica</title>
+  </head>
+  <body>
+    <div class="main_div">
+      <div class="header-main">
+        <h1 class="mh">Agenda Telefônica</h1>
+        <button id="btn-modal" class="btn-modal">Adicionar contato</button>
+      </div>
 
-</head>
-<body>
-    <div  class="main_div">
-        <h1 class="mh">Agenda Telefônica</h1>      
-            <form class="form">
-                <label  class="formtitle">Nome:</label><br>
-                <input id = "id_name" class="text" type ="text" onfocus="this.value=''" placeholder="Nome" required>
-                <br><label class="formtitle">Sobrenome:</label><br>
-                <input id ="id_lastname" class="text" type="Sobrenome" onfocus="this.value=''"placeholder="Sobrenome">
-                <br><label class="formtitle">Celular:</label><br>
-                <input id ="id_mobile" class="text" type="text" onfocus="this.value=''"placeholder="(00) 0 0000-0000" required>
-                <br><label class="formtitle">E-mail:</label><br>
-                <input id ="id_email" class="text" type="email" onfocus="this.value=''"placeholder="email@siasp.com">
-            </form>
-        <div class="container">
-            <form class="searchBar" action="#" method="post">
-                <label id="titlesearchBar" >Pesquisar contato:</label><br>
-                <input type="text" name="search" id="search" placeholder="Buscar" required>
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-        </div>
-        <div class="add" onclick="add()"><h4 class="addbtn">Adicionar</h4></div>
-            <br>
-        <div class="div2" id="3">
-        </div>
-    </div>     
-    
+      <div class="container">
+        <form class="searchBar" action="#" method="post">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Buscar"
+            required
+          />
+          <button type="submit" class="fas_fa-search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="modal" id="myModal" style="display: none">
+        <form class="form">
+          <input
+            id="id_name"
+            class="text"
+            type="text"
+            onfocus="this.value=''"
+            placeholder="Nome"
+            required
+          />
+          <input
+            id="id_lastname"
+            class="text"
+            type="Sobrenome"
+            onfocus="this.value=''"
+            placeholder="Sobrenome"
+          />
+          <input
+            id="id_mobile"
+            class="text"
+            type="text"
+            onfocus="this.value=''"
+            placeholder="(00) 0 0000-0000"
+            required
+          />
+          <input
+            id="id_email"
+            class="text"
+            type="email"
+            onfocus="this.value=''"
+            placeholder="email@siasp.com"
+          />
+        </form>
+        <button class="add" onclick="add()" id="add">Adicionar</button>
+        <button id="btn-fechar">Cancelar</button>
+      </div>
+      <div class="div2" id="3"></div>
+    </div>
+
     <script src="./script.js"></script>
-</body>
-</html>       
+  </body>
+</html>

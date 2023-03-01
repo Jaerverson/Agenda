@@ -18,6 +18,7 @@
     />
     <title>Agenda Telefônica</title>
   </head>
+
   <body>
     <div class="main_div">
       <div class="header-main">
@@ -34,11 +35,13 @@
             placeholder="Buscar"
             required
           />
+
           <button type="submit" class="fas_fa-search">
             <i class="fas fa-search"></i>
           </button>
         </form>
       </div>
+
       <div class="modal" id="myModal" style="display: none">
         <form class="form">
           <input
@@ -49,6 +52,7 @@
             placeholder="Nome"
             required
           />
+
           <input
             id="id_lastname"
             class="text"
@@ -56,6 +60,7 @@
             onfocus="this.value=''"
             placeholder="Sobrenome"
           />
+
           <input
             id="id_mobile"
             class="text"
@@ -64,17 +69,20 @@
             placeholder="(00) 0 0000-0000"
             required
           />
+
           <input
             id="id_email"
             class="text"
             type="email"
             onfocus="this.value=''"
-            placeholder="email@siasp.com"
+            placeholder="email@exemple.com"
           />
         </form>
+
         <button class="add" onclick="add()" id="add">Adicionar</button>
         <button id="btn-fechar">Cancelar</button>
       </div>
+
       <div class="div2" id="3"></div>
     </div>
 

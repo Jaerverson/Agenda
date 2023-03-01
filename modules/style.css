@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: darkblue; 
+    background-color: #95BDFF ; 
     background-size: 300% 300%;
     font-family: "Roboto", Helvetica;
 }
@@ -14,9 +14,9 @@ body{
     height:auto;
     width: auto;
     margin: 2rem 2rem 2rem 2rem ;
-    border:2px solid rgb(46, 45, 45);
+    border:2px solid black;
     border-radius: 5px;
-    background-color: white;
+    background-color: #B4E4FF ;
     position: relative;
 }
 .header-main{
@@ -32,7 +32,7 @@ body{
     margin: 1rem;
     border:2px solid black;
     border-radius: 15px;
-    background-color: whitesmoke;
+    background-color: white;
     min-height: 500px;
 }
 
@@ -40,13 +40,29 @@ body{
 
 .fas_fa-search{
     cursor: pointer;
-    padding: 11px;
+    padding: 10px;
+    border: 2px solid white;
+    color: white;
+    background-color: #95BDFF;
 }
 
 .searchBar{
-    margin-left: 47px;
+    margin: 1rem;
+    width: 18.5rem;
     border-radius: 0.3em;
     padding: 0.3em;
+    color: #95BDFF;
+    border: 2px solid white;
+}
+.searchBar input{
+    background-color: white;
+    border: 2px solid white;
+    height: 40px;
+    padding: 5px;
+    background-color: none;
+    width: 240px;
+    border-radius:5px;
+    font-size: 18px;
 }
 
 
@@ -59,8 +75,8 @@ body{
     text-align: left;
     margin-left: 50px;
     color: white;
-    background-color: blue
-    ;
+    background-color: #95BDFF;
+    border: solid white;
 
 
 }
@@ -102,7 +118,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #B4E4FF ;
     padding: 1.5rem;
     border: 1px solid black; 
     border-radius: 5px;  
@@ -122,21 +138,10 @@ body{
   }
   
   #btn-modal, #btn-fechar, #add {
-    background-color: blue;
+    background-color: #95BDFF;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
 
   }
-
-  #search{
-    height: 40px;
-    padding: 5px;
-    background-color: none;
-    width: 240px;
-    border-radius:5px;
-    background-color: #cecece;
-    font-size: 18px;
-
-}

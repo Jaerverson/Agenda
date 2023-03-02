@@ -45,9 +45,9 @@ function print() {
       contacts[i].newMobile +
       "<br>E-mail: " +
       contacts[i].newEmail +
-      "</b><div class='line2' onclick='del(" +
+      "</b><div class='editDel'><div class='line2' onclick='del(" +
       i +
-      ")'><b>Apagar</b></div></div><div class='line3'><b>Editar</b></div></div>";
+      ")'><b>Apagar</b></div></div><div class='line3'><b>Editar</b></div></div></div>";
   }
   document.getElementById("3").innerHTML = temp;
 }

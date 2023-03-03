@@ -81,16 +81,19 @@ body {
   display: flex;
   justify-content: space-between;
   z-index: 2;
+  height: 150px;
 }
 
-.line {
+.line { 
   width: 130rem;
+  gap: 5px;
   border: 1.5px solid black;
   border-radius: 11px;
   margin: 5px;
+  padding: 10px 20px;
   background-color: #b4e4ff;
   display: flex;
-  flex-direction: column;
+  justify-content: baseline;
 }
 .editDel {
   margin-top: 2rem;
@@ -105,7 +108,7 @@ body {
 
 .line2 {
   margin: 5px;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: red;
   color: white;
   border: none;
@@ -116,7 +119,7 @@ body {
 
 .line3 {
   margin: 5px;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: blue;
   color: white;
   border: none;
@@ -196,4 +199,5 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }

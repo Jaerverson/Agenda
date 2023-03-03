@@ -36,18 +36,20 @@ function print() {
   var temp = "";
   for (let i = 0; i < contacts.length; i++) {
     temp +=
-      "<div class='line'><br> " +
-      "Nome: " +
+      "<div class='content1'>"+
+      "<div class='line'> " +
+      "<p>Nome: </p>" +
       contacts[i].newName +
-      "<br>Sobrenome: " +
+      "<p></p> " +
       contacts[i].newLastname +
-      "<br>Número: " +
+      "<p> Número: </p>" +
       contacts[i].newMobile +
-      "<br>E-mail: " +
+      "<p> E-mail: </p>" +
       contacts[i].newEmail +
-      "</b><div class='editDel'><div class='line2' onclick='del(" +
+      "</div>"+
+      "<div class='editDel'><button class='line2' onclick='del(" +
       i +
-      ")'><b>Apagar</b></div></div><div class='line3'><b>Editar</b></div></div></div>";
+      ")'><i class='fas fa-trash'></i></button><button class='line3'><i class='fas fa-pencil-alt'></i></button></div></div>";
   }
   document.getElementById("3").innerHTML = temp;
 }
